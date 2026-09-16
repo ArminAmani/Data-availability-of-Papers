@@ -35,7 +35,7 @@ Notes:
 - Zero curvature enforces no classical bending moment.
 - Zero nonlocal moment and its derivative enforce the additional higher-order boundary conditions required by Nonlocal Strain Gradient Theory (NSGT).
 
-## Each folder includes a Jupyter notebook (`.ipynb`) and a `results_*/` subfolder with output data.
+## Each folder includes a Jupyter notebook (`.ipynb`) with output Main Results.
 
 ## Citation 
 If you use this code, please cite:
