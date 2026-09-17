@@ -51,15 +51,17 @@ Each case folder currently contains archived numerical outputs and Jupyter noteb
 
 ## Boundary-Condition Cases
 
-Three support configurations are considered.
+Because the adopted NSGT eigenproblem is sixth order in the normalized coordinate $X$, six independent scalar boundary conditions are prescribed for each support configuration. The boundary conditions used in this study are:
 
-| Configuration | Boundary treatment in the PINN formulation |
-|---|---|
-| **Clamped–Clamped (C–C)** | Deflection, slope, and curvature are enforced exactly at both endpoints through the trial function; no active boundary-condition penalty is required. |
-| **Simply Supported (S–S)** | Deflection and curvature are enforced exactly at both endpoints, while the remaining natural moment conditions are retained as soft constraints. |
-| **Clamped–Free (C–F)** | The clamped-end conditions are enforced exactly, while the three higher-order free-end conditions are imposed through the boundary loss. |
+| Configuration | Conditions at $X=0$ | Conditions at $X=1$ | Enforcement in the PINN formulation |
+|---|---|---|---|
+| **Clamped–Clamped (C–C)** | $\Phi(0)=0$, $\Phi'(0)=0$, $\Phi''(0)=0$ | $\Phi(1)=0$, $\Phi'(1)=0$, $\Phi''(1)=0$ | All six boundary conditions are imposed exactly through the admissible trial function; no active boundary-condition penalty is required. |
+| **Simply Supported (S–S)** | $\Phi(0)=0$, $\Phi''(0)=0$, $\bar{M}(0)=0$ | $\Phi(1)=0$, $\Phi''(1)=0$, $\bar{M}(1)=0$ | Displacement and curvature conditions are imposed exactly, while the two dimensionless moment conditions are retained as soft constraints. |
+| **Clamped–Free (C–F)** | $\Phi(0)=0$, $\Phi'(0)=0$, $\Phi''(0)=0$ | $\Phi''(1)=0$, $\bar{M}(1)=0$, $\bar{M}'(1)=0$ | The three clamped-end conditions are imposed exactly, while the three free-end conditions are enforced through the boundary loss. |
 
-The complete mathematical definitions of the sixth-order NSGT boundary conditions are provided in the associated manuscript.
+Here, $\Phi$ denotes the dimensionless mode shape and $\bar{M}$ denotes the dimensionless bending moment defined in the manuscript. In the adopted NSGT formulation, the zero-curvature and zero-moment conditions are independent and should not be interpreted as equivalent.
+
+The complete derivation and mathematical definition of these higher-order boundary conditions are provided in the associated manuscript.
 
 ---
 
