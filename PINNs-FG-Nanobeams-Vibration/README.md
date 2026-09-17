@@ -65,30 +65,15 @@ The complete derivation and mathematical definition of these higher-order bounda
 
 ---
 
-# Code and Data Availability
+## Data and Code Availability
 
-## Publicly Available Material
+Selected computational artifacts associated with the C–C, S–S, and C–F cases are provided in this repository. These materials include selected configuration, optimization, and numerical verification records from the computations reported in the submitted manuscript.
 
-The numerical outputs supporting the results reported in the submitted manuscript are publicly available in this repository.
+During the peer-review process, the complete computational implementation, including the case-specific PINN source codes, independent BVP verification routines, checkpoints, detailed optimization histories, and supporting numerical outputs, is maintained as a controlled version to ensure consistency with the submitted work.
 
-These materials document the principal numerical results for the C–C, S–S, and C–F configurations, including the quantities used in the reported eigenvalue, mode-shape, residual, and convergence analyses.
+The complete computational package can be provided confidentially to the handling Editor and reviewers upon reasonable request during peer review.
 
-## Source-Code Availability During Peer Review
-
-The complete executable source code is currently maintained in a controlled private archive during the peer-review process in order to preserve version consistency between the computational implementation and the submitted manuscript.
-
-The complete source package includes:
-
-- the case-specific PINN implementations;
-- the training and optimization procedures;
-- the independent boundary-value-problem (BVP) reference calculations; and
-- the scripts required to reproduce the principal numerical results reported in the manuscript.
-
-During peer review, the complete source code can be provided confidentially to the **handling Editor and/or reviewers upon reasonable request**.
-
-## Public Release Upon Acceptance
-
-Upon acceptance of the manuscript for publication, the complete source code corresponding to the final accepted version of the work will be publicly released in this repository.
+Upon acceptance of the manuscript for publication, the source code and supporting computational materials corresponding to the final accepted version of the study will be released publicly in this repository.
 
 ---
 
